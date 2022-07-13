@@ -1,0 +1,122 @@
+.flexRowContent--menu-link,
+.flexRowContent--main-header {
+  padding: 0 0.5rem;
+}
+
+@media screen and (min-width: 40em) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 0.25rem;
+  }
+}
+
+.flexRowContent--menu-link {
+  background-color: #03044e;
+  color: #fff;
+}
+
+.flexRowContent--main-header {
+  background-color: #DC1727!important;
+}
+
+.flexRowContent--main-header-mobile {
+  align-items: center;
+  padding: 0.625rem 0.5rem;
+  background-color: #DC1727!important;
+}
+.flexRowContent--menu-row{
+  background-color: #ffffff;
+}
+.flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+}
+.flexRowContent--sticky-header{
+  background-color: #ffffff;
+}
+@media only screen and (max-width: 800px) {
+  .flexRow--deals {
+   display: none;
+  }
+}
+.flexRow--deals {
+  background-color: #ffffff!important;
+  color: #333333!important;
+  margin: 2 px 0px;
+  padding: 10px 0px 0px 0px;
+}
+
+.flexRow--deals .stretchChildrenWidth {
+  align-items: center;
+}
+
+.flexRow--deals .flexCol {
+  align-items: center;
+}
+
+.flexCol--filterCol {
+  max-width: 500px;
+  min-width: 230px;
+}
+
+.flexCol--productCountCol {
+  align-items: flex-start;
+}
+
+.flexCol--orderByCol {
+  align-items: flex-end;
+}
+
+.flexCol--orderByMobileCol {
+  width: 42%;
+}
+
+.flexCol--filterMobileCol {
+  width: 38%;
+}
+.flexCol--hub1{
+  padding: 10px 10px;
+}
+.flexCol--hub2{
+  padding: 10px 10px;
+}
+.flexCol--hub3{
+  padding: 10px 10px;
+}
+.flexRow--quickviewMainRow {
+  display: flex;
+  max-height: 100%;
+}
+
+.flexColChild--quickviewDetails:first-child {
+  overflow-y: auto;
+  height: 66% !important;
+  overflow-x: hidden;
+}
+
+.flexColChild--quickviewDetails:last-child {
+  height: 34% !important;
+}
+.flexColChild--search-main{
+  max-width: 700px;
+  min-width: 430px;
+}
+.flexColChild--menu.spacer{
+  max-width: 300px;
+  min-width: 200px;
+}
+.flexRow--addToCartRow {
+  padding-bottom: 1rem;
+}

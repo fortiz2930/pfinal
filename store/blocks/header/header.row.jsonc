@@ -1,0 +1,130 @@
+{
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#desktop",
+      "flex-layout.row#categories"
+    ]
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer", 
+      "flex-layout.col#search-desktop",
+      "login",
+      "minicart.v2"
+    ]
+  },  
+  "flex-layout.col#search-desktop": {
+    "props":{
+      "displayMode": "clear-button",
+      "blockClass": "search-main",
+      "marginLeft": "50"
+    },
+    "children": ["search-bar"]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://logicinfopartnerbr.vteximg.com.br/arquivos/logo_waldos.png",
+      "width": "80"
+    }
+  },
+  "flex-layout.row#categories":{
+    "props":{
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "fullWidth": true
+    },    
+    "children":[
+      "flex-layout.col#category-menu"
+    ]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },  
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer",
+      "logo",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": ["menu#drawer"]
+  },
+
+  "menu#drawer": {
+    "children": [
+      "menu-item#category-departments",
+      "menu-item#category-home",
+      "menu-item#category-care",
+      "menu-item#category-decoration",
+      "menu-item#category-moda",
+      "menu-item#category-temporadas",
+      "menu-item#category-negocio",
+      "menu-item#category-blog"
+    ],
+    "props": {
+      "blockClass": "menumobile",
+      "orientation": "vertical"
+    }
+  },
+  "login":{
+    "props":{"emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Loguarse",
+      "emailPraceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "showIconProfile":"true"
+    }
+  },
+  "flex-layout.row#bar-desktop": {
+    "children": ["notification.bar"],
+    "props": { "fullWidth": true }
+  },  
+  "notification.bar": {
+    "props": {
+      "content": "Queremos que te cuides y que tu familia esté bien #QuedateEnCasa."
+    }
+  }
+}

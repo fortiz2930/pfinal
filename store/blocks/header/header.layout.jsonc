@@ -1,0 +1,8 @@
+{
+    "header-layout.desktop": {
+        "children": [
+          "flex-layout.row#bar-desktop",
+          "sticky-layout#desktop"
+        ]
+      }
+}

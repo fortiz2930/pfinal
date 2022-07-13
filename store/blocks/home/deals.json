@@ -1,0 +1,82 @@
+{
+    "flex-layout.row#deals": {
+      "children": [
+        "flex-layout.col#deals1",
+        "flex-layout.col#deals2",
+        "flex-layout.col#deals3"
+      ],
+      "props": {
+        "blockClass": "deals"
+      }
+    },
+    "flex-layout.col#deals1": {
+      "children": [
+        "menu-item#1"
+      ]
+    },
+    "menu-item#1":{
+        "props":{
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Atencion al 772-226-1456",
+            "text": "Atencion al 772-226-1456"
+          } ,
+          "iconProps": {
+            "id": "hpa-telefono",
+            "size": 22,
+            "activeClassName": "action-primary"
+          }
+        }
+      },
+    "flex-layout.col#deals2": {
+      "children": [
+        "menu-item#2"
+      ]
+    },
+    "menu-item#2":{
+        "props":{
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Envios a toda la república",
+            "text": "Envios a toda la república"
+          } ,
+          "iconProps": {
+            "id": "hpa-truck",
+            "size": 24,
+            "activeClassName": "action-primary"
+          }
+        }
+      },
+    "flex-layout.col#deals3": {
+      "children": [
+        "menu-item#3"
+      ]
+    },
+    "menu-item#3":{
+        "props":{
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Descubre las temporadas Waldo's",
+            "text": "Descubre las temporadas Waldo's"
+          } ,
+          "iconProps": {
+            "id": "hpa-cart",
+            "size": 20,
+            "activeClassName": "action-primary"
+          }
+        }
+      }
+  }
+  

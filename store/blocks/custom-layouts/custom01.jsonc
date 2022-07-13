@@ -1,0 +1,254 @@
+{
+    "store.custom#custom01":{
+        "children": [
+            //"video#custom",
+            "slider-layout#text-test",
+            "tab-layout#custom01"   
+            //"flex-layout.row#summer-images"
+        ]
+    },
+
+    /*********Tab Layout******/
+
+    "tab-layout#custom01": {
+        "children": [
+          "tab-list",
+          "tab-content"
+        ]
+    },
+
+    "tab-list": {
+        "children": [
+          "tab-list.item#1",
+          "tab-list.item#2"
+          ]
+    },
+
+    "tab-content": {
+        "children": [
+          "tab-content.item#1",
+          "tab-content.item#2"
+          ]
+    },
+
+    "tab-list.item#1": {
+        "props": {
+          "tabId": "majorAppliances",
+          "label": "Major Appliances",
+          "defaultActiveTab": true
+        }
+    },
+    "tab-list.item#2": {
+        "props": {
+          "tabId": "electronics",
+          "label": "Electronics"
+        }
+    },
+    "tab-content.item#1": {
+        "children": [
+          "flex-layout.row#summer-images"
+          //"rich-text#1"
+        ],
+        "props": {
+          "tabId": "majorAppliances"
+        }
+    },
+      "tab-content.item#2": {
+        "children": [
+          "flex-layout.row#winter-images"
+          //"rich-text#2"
+        ],
+        "props": {
+          "tabId": "electronics"
+        }
+    },
+    /**********Flex*********/
+
+    "flex-layout.row#summer-images":{
+        "children":[
+            "flex-layout.col#summer1",
+            "flex-layout.col#summer2",
+            "flex-layout.col#summer3"
+        ]
+    },
+
+    "flex-layout.col#summer1":{
+        "children":[
+            "image#summer1",
+            "rich-text#1",
+            "rich-text#description"
+        ],
+        "props":{
+            "blockClass":"tab-margin"
+        }
+    },
+
+    "flex-layout.col#summer2":{
+        "children":[
+            "image#summer2",
+            "rich-text#1",
+            "rich-text#description"
+        ],
+        "props":{
+            "blockClass":"tab-margin"
+        }
+    },    
+
+    "flex-layout.col#summer3":{
+        "children":[
+            "image#summer3",
+            "rich-text#1",
+            "rich-text#description"
+        ],
+        "props":{
+            "blockClass":"tab-margin"
+        }
+    },
+
+    "image#summer1":{
+        "props":{
+            "src": "assets/summer1.webp"
+        }
+    },
+
+    "image#summer2":{
+        "props":{
+            "src": "assets/summer2.webp"
+        }
+    }, 
+    
+    "image#summer3":{
+        "props":{
+            "src": "assets/summer3.webp"
+        }
+    },
+    
+    "flex-layout.row#winter-images":{
+        "children":[
+            "flex-layout.col#winter1",
+            "flex-layout.col#winter2",
+            "flex-layout.col#winter3"
+        ]
+    },
+
+    "flex-layout.col#winter1":{
+        "children":[
+            "image#winter1",
+            "rich-text#2",
+            "rich-text#description"
+        ],
+        "props":{
+            "blockClass":"tab-margin"
+        }
+    },
+
+    "flex-layout.col#winter2":{
+        "children":[
+            "image#winter2",
+            "rich-text#2",
+            "rich-text#description"
+        ],
+        "props":{
+            "blockClass":"tab-margin"
+        }
+    },    
+
+    "flex-layout.col#winter3":{
+        "children":[
+            "image#winter3",
+            "rich-text#2",
+            "rich-text#description"
+        ],
+        "props":{
+            "blockClass":"tab-margin"
+        }
+    },
+
+    "image#winter1":{
+        "props":{
+            "src": "assets/winter1.webp"
+        }
+    },
+
+    "image#winter2":{
+        "props":{
+            "src": "assets/winter2.webp"
+        }
+    }, 
+    
+    "image#winter3":{
+        "props":{
+            "src": "assets/winter3.webp"
+        }
+    },     
+    /******* Video **********/
+    "video#custom": {
+        "props": {
+          "width": "100%",
+          "height": "600px",
+          "loop": false,
+          "autoPlay": false,
+          "muted": false,
+          "src": "https://www.youtube.com/watch?v=u3fubOXLBJ8",
+          "blockClass": "videoEl"
+        }
+    },
+   /*******Slider **********/
+    "slider-layout#text-test": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "blockClass": "carousel"
+        },
+        "children": ["image#slider1", "image#slider2", "image#slider3"]
+      },
+    
+      "image#slider1":{
+        "props":{
+            "src": "assets/banner1.webp"
+        }
+      },
+      "image#slider2":{
+        "props":{
+            "src": "assets/banner2.webp"
+        }
+      },
+      "image#slider3":{
+        "props":{
+            "src": "assets/banner3.webp"
+        }
+      },
+
+      "rich-text#1": {
+        "props": {
+            "text": "Texto para Major Appliances",
+            "textPosition": "CENTER",
+            "font": "t-heading-4"
+        }
+      },
+      "rich-text#2": {
+        "props": {
+            "text": "Texto para Electronics",
+            "textPosition": "CENTER",
+            "font": "t-heading-4"
+        }
+      },
+      "rich-text#3": {
+        "props": {
+            "text": "Texto "
+        }
+      },      
+      "rich-text#description": {
+        "props": {
+          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
+          "textPosition": "LEFT",
+          "font": "t-body"
+        }
+      }
+
+}

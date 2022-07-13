@@ -1,0 +1,329 @@
+{
+    "vtex.menu@2.x:menu#category-menu": {
+      "props": {
+        "experimentalOptimizeRendering": true
+      },
+      "children": [
+        "header-spacer",
+        "menu-item#category-departments",
+        "menu-item#category-home",
+        "menu-item#category-care",
+        "menu-item#category-decoration",
+        "menu-item#category-moda",
+        "menu-item#category-temporadas",
+        "menu-item#category-negocio",
+        "menu-item#category-blog",
+        // "menu-item#more",
+        "header-spacer"
+      ]
+    },
+    "menu-item#category-departments": {
+      "props": {
+        "id": "menu-item-category-departments",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "menutitle",
+        "itemProps": {
+          "href": "/custom02",
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Departamentos",
+          "text": "Departamentos"
+        }
+      },
+      "blocks": [
+        "vtex.menu@2.x:submenu#category-apparel"
+      ]
+    },
+    "menu-item#category-home": {
+        "props": {
+          "id": "menu-item-category-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "menutitle",
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Hogar",
+            "text": "Hogar"
+          }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#category-apparel"
+        ]
+    },
+    "menu-item#category-care": {
+        "props": {
+          "id": "menu-item-category-care",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "menutitle",
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Cuidado Personal",
+            "text": "Cuidado Personal"
+          }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#category-apparel"
+        ]
+    },
+    "menu-item#category-decoration": {
+        "props": {
+          "id": "menu-item-category-decoration",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "menutitle",
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Decoración",
+            "text": "Decoración"
+          }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#category-apparel"
+        ]
+    },
+    "menu-item#category-moda": {
+        "props": {
+          "id": "menu-item-category-moda",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "menutitle",
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Waldo's Moda",
+            "text": "Waldo's Moda"
+          }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#category-apparel"
+        ]
+    },
+    "menu-item#category-temporadas": {
+        "props": {
+          "id": "menu-item-category-temporadas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "menutitle",
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Temporadas",
+            "text": "Temporadas"
+          }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#category-apparel"
+        ]
+    },
+    "menu-item#category-negocio": {
+        "props": {
+          "id": "menu-item-category-negocio",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "menutitle",
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Waldo's Negocio",
+            "text": "Waldo's Negocio"
+          }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#category-apparel"
+        ]
+    },
+    "menu-item#category-blog": {
+        "props": {
+          "id": "menu-item-category-blog",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "menutitle",
+          "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Blog",
+            "text": "Blog"
+          }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#category-apparel"
+        ]
+    },                    
+    "vtex.menu@2.x:submenu#category-apparel": {
+      "props": {
+        "width": "auto"
+      },
+      "children": [
+        "vtex.menu@2.x:menu#category-apparel"
+      ]
+    },
+    "vtex.menu@2.x:menu#category-apparel": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        "menu-item#category-apparel-clothing",
+        "menu-item#category-apparel-accessories",
+        "menu-item#category-apparel-eyeglasses"
+      ]
+    },
+    "menu-item#category-apparel-clothing": {
+      "props": {
+        "id": "menu-item-category-apparel-clothing",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "submenu",
+        "itemProps": {
+          "type": "internal",
+          "href": "/Livros",
+          "noFollow": false,
+          "tagTitle": "Hogar",
+          "text": "Hogar"
+        }
+      }
+    },
+    "menu-item#category-apparel-accessories": {
+      "props": {
+        "id": "menu-item-category-apparel-accessories",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "submenu",
+        "itemProps": {
+          "type": "internal",
+          "href": "/Bebê",
+          "noFollow": false,
+          "tagTitle": "Moda",
+          "text": "Moda"
+        }
+      }
+    },
+    "menu-item#category-apparel-eyeglasses": {
+      "props": {
+        "id": "menu-item-category-apparel-eyeglasses",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "submenu",
+        "itemProps": {
+          "type": "internal",
+          "href": "/Pet Shop",
+          "noFollow": false,
+          "tagTitle": "Cuidado Personal",
+          "text": "Cuidado Personal"
+        }
+      }
+    },
+    "menu-item#more": {
+      "props": {
+        "id": "menu-item-custom-sale",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "submenu",
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": true,
+          "tagTitle": "Temporadas",
+          "text": "Temporadas"
+        }
+      },
+      "blocks": [
+        "vtex.menu@2.x:submenu#more"
+      ]
+    },
+    "vtex.menu@2.x:submenu#more": {
+      "props": {
+        "width": "100%"
+      },
+      "children": [
+        "flex-layout.row#menu-more"
+      ]
+    },
+    "flex-layout.row#menu-more": {
+      "children": [
+        "flex-layout.col#menu-more-1"
+        // "flex-layout.col#menu-more-2"
+      ]
+    },
+    "flex-layout.col#menu-more-1": {
+      "children": [
+        "vtex.menu@2.x:menu#more"
+      ]
+    },
+    // "flex-layout.col#menu-more-2": {
+    //   "children": [
+    //     "info-card#home"
+    //   ]
+    // },
+    "vtex.menu@2.x:menu#more": {
+      "props": {
+        "orientation": "vertical"
+      },
+      "children": [
+        "menu-item#about-us",
+        "menu-item#faq"
+      ]
+    },
+    "menu-item#about-us": {
+      "props": {
+        "id": "menu-item-about-us",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/about-us",
+          "noFollow": true,
+          "tagTitle": "About us",
+          "text": "About us"
+        }
+      }
+    },
+    "menu-item#faq": {
+      "props": {
+        "id": "menu-item-faq",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/faq",
+          "noFollow": true,
+          "tagTitle": "FAQ",
+          "text": "FAQ"
+        }
+      }
+    },
+    "menu-item#contact-us": {
+      "props": {
+        "id": "menu-item-contact-us",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/contact-us",
+          "noFollow": true,
+          "tagTitle": "Contact Us",
+          "text": "Contact Us"
+        }
+      }
+    }
+  }
+  
